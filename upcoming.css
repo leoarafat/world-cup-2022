@@ -1,0 +1,285 @@
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee;
+}
+/* container design start */
+.container{
+max-width: 1200px;
+background-color: #ffffff;
+margin: 0 auto;
+padding: 10px;
+}
+/* container design ends */
+
+/* header design start */
+header{
+background-color: #1a1a1d ;
+align-items: center; 
+display: flex;
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 40px;
+padding-bottom: 0;
+margin-bottom: 50px;
+border-radius: 10px;
+}
+
+header .header-description{
+color: white;
+
+}
+.header-heading{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 99, 71) ;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.header-image{
+
+}
+.header-image img{
+    width: 100%;
+    
+}
+.button-div{
+    transition: 1s;
+    
+}
+.button-div:hover{
+    transform: translateX(30px);
+}
+/* header design end */
+
+/* world cup information design start */
+.world-cup-information{
+display: flex;
+}
+/* football menu design start */
+.football-menu{
+background-color: black;
+display: flex; 
+flex-direction: column; 
+text-align: center; 
+justify-content: center; 
+width: 300px;
+height: 200px;
+padding: 10px;
+margin: 0 15px;
+border-radius: 10px;
+}
+.menu-button{
+text-decoration: none;
+color: white;
+font-size: 1rem;
+margin: 10px;
+padding: 10px;
+background-color: white;
+color: black;
+border-radius: 10px;
+}
+.menu-button-unique{
+    background-color: rgb(0, 0, 135);
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+/* football menu design end */
+
+/* blog section start */
+.upcoming-match-section{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 15px;
+}
+.match-card{
+box-shadow: 0px 2px 4px 3px #eee;
+border-radius: 8px;
+padding: 20px 15px;
+width: 300px;
+text-align: center;
+}
+.image-sec{
+display: flex;
+justify-content: space-between;
+}
+
+.secret-button{
+    text-decoration: none;
+    background-color: #da7b93;
+    color: black;
+    padding: 10px 15px;
+    margin-top: 15px;
+    display: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* blog section end */
+footer{
+text-align: center;
+background-color: black;
+padding: 50px;
+margin-top: 50px;
+}
+.footer-title{
+color: white;
+margin-bottom: 30px;
+}
+.footer-desc{
+    margin-top: 30px;
+}
+.footer-desc a{
+text-decoration: none;
+color: lightgray;
+margin-right: 20px;
+}
+.footer-icon a{
+    color: white;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.fa-brands{
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+/* world cup information design end */
+
+
+
+/* responsive website */
+/*  small devices (phones ) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    header{
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .header-description{
+width: 100%;
+padding: 30px;
+    }
+    .header-heading{
+font-size: 1.6rem;
+font-weight: bolder;
+    }
+.header-image {
+    width: 100%;
+   
+}
+    .world-cup-information{
+    flex-direction: column;
+    align-items: center;
+   
+    }
+    .football-menu{
+        background-color: #ffffff;
+        display: flex;
+       justify-content: space-around;
+      height: 100%;
+
+
+    }
+    .menu-button{
+        background-color: #eee;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+    .menu-button-unique{
+        padding: 20px;
+        font-size: 1.2rem;
+       
+    }
+    .upcoming-match-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .match-card{
+        width: 300px;
+    }
+    footer{
+
+    }
+    .footer-desc{
+    display: flex;
+    flex-direction: column;
+    }
+    .footer-desc a{
+        margin-bottom: 25px;
+    }
+    .footer-icon{
+
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    header{
+        height: 80vh;
+        justify-content: space-around;
+       
+    }
+    .header-image{
+        width: 100%;
+    }
+    .header-description{
+        width: 100%;
+    }
+    .world-cup-information{
+        flex-direction: column;
+        align-items: center;
+    }
+    .football-menu{
+        background-color: #ffffff;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+    }
+    .menu-button{
+        background-color: #eee;
+        padding: 15px 25px;
+        font-size: 1.4rem;
+    }
+    .menu-button-unique{
+        padding: 15px 25px;
+        font-size: 1.4rem;
+    }
+    .upcoming-match-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .match-card{
+        width: 400px;
+    }
+    .secret-button{
+        display: block;
+    }
+}
+
+
+/* Large devices and extra larg device (laptops/desktops, 992px and up 1200px) */
+@media and (min-width: 992px) and (max-width:1200px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+/* responsive website */
